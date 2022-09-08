@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
     <title>#1 Lesson - GIT commands</title>
 </head>
 <body>
@@ -11,59 +12,96 @@
     <h2>Перелік основних команд, якi потрібно записати:</h2>
     <ul>
         <li>
-            <h3>git config --global user.name blabla</h3>
+            <h3><code>git config --global user.name blabla</code></h3>
+            <p>Перше, що ви повинні зробити, коли ви інсталюєте Git - це встановити ім’я користувача.</p>
+            <p>Знову ж таки, якщо ви передаєте опцію <code class="c-bash">--global</code>, ці налаштування потрібно зробити тільки один раз, тоді Git завжди буде використовувати цю інформацію для всього, що ви робите у цій системі.</p>
+        </li>
+        <li>
+            <h3><code>git config --global user.email blabal@bla</code></h3>
+            <p>Перше, що ви повинні зробити, коли ви інсталюєте Git - це встановити  адресу електронної пошти.</p>
+            <p>Якщо ви хочете, перевизначити ім’я або адресу електронної пошти для конкретних проектів, ви можете виконати цю ж команду без опції <code class="c-bash">--global</code> в каталозі необхідного проекту.</p>
+        </li>
+        <li>
+            <h3><code>git init</code></h3>
+            <p>Це створить новий підкаталог <code class="c-bash">.git</code>, який містить всі необхідні файли вашого репозиторія — скелет Git-репозиторія. На цей момент, у вашому проекті ще нічого не відстежується.</p>
+        </li>
+        <li>
+            <h3><code>git status</code></h3>
+            <p>Щоб дізнатись, в якому стані ваші файли, варто скористатись цією командою.</p>
+        </li>
+        <li>
+            <h3><code>git add</code></h3>
+            <p>Щоб почати контролювати новий файл, вам треба використати цю команду.</p>
+        </li>
+        <li>
+            <h3><code>git commit</code></h3>
+            <p>Припустімо, що ваш індекс саме в стані, який ви бажаєте, та тепер ви можете створити коміт з ваших зміни. Пам’ятайте, що будь-які неіндексовані зміни — будь-які файли, що ви їх створили чи змінили, але ви не виконали git add після їх редагування — не потраплять до цього коміту. Вони так і залишаться зміненими файлами на вашому диску. У цьому випадку, припустімо, що останнього разу, коли ви виконали git status, ви побачили, що всі зміни індексовані, отже ви готові зберегти ваші зміни. Найпростіший спосіб створити коміт — набрати git commit:</p>
+
+                <code class="c-bash">$ git commit</code>
+                <p>Це запустить ваш редактор. (Це редактор, який встановлено в змінній середовища EDITOR вашої оболонки — зазвичай vim або emacs, хоча ви можете налаштувати його як завгодно за допомогою команди git config --global core.editor, яку ви бачили в Вступ).</p>
+                <p>Редактор покаже вам наступний текст (це приклад екрану Vim):</p>
+                <code class="c-bash multiline">
+                    # Please enter the commit message for your changes. Lines starting
+                    # with '#' will be ignored, and an empty message aborts the commit.
+                    # On branch master
+                    # Your branch is up-to-date with 'origin/master'.
+                    #
+                    # Changes to be committed:
+                    #	new file:   README
+                    #	modified:   CONTRIBUTING.md
+                    #
+                    ~
+                    ~
+                    ~
+                    ".git/COMMIT_EDITMSG" 9L, 283C
+                </code>
+                
+                <p>Ви бачите, згенероване повідомлення коміту містить закоментований останній вивід команди git status та один пустий рядок нагорі. Ви можете видалити ці коментарі на написати своє повідомлення коміту, або можете залишити їх, щоб вони допомогли вам пригадати що ви зберігаєте. (Для навіть більш докладного нагадування про ваші зміни, ви можете передати опцію -v до git commit. Це призведе то того, що у вашому редакторі також будуть відображені всі зміни, що ввійдуть до коміту.) Коли ви виходите з редактору, Git створює коміт з цим повідомленням коміту (після видалення коментарів та змін до файлів).</p>
+                
+                <p>Іншим чином, ви можете набрати повідомлення коміту прямо в команді commit, якщо напишете її після опції -m, ось так:</p>
+                
+                <code class="c-bash multiline">
+                    $ git commit -m "Story 182: Fix benchmarks for speed"
+                    [master 463dc4f] Story 182: Fix benchmarks for speed
+                     2 files changed, 2 insertions(+)
+                     create mode 100644 README
+                </code>
+                <p>Тепер ви створили свій перший коміт! Ви можете бачити, що команда commit розповіла вам дещо про коміт: до якої гілки ви зберегли зміни (master), який SHA-1 хеш отримав коміт (463dc4f), скільки файлів було змінено, та статистику щодо індексованих та видалених рядків у коміті.</p>
+                
+                <p>Пам’ятайте, що коміт записує знімок, який ви створили в індексі. Усе, що ви не проіндексували, залишиться зміненим. Ви можете зробити інший коміт, щоб додати ці зміни до історії. Щоразу ви створюєте коміт, ви записуєте знімок вашого проекту, до якого ви можете повернутися або порівняти щось пізніше.</p>
+                
+                </p>
+        </li>
+        <li>
+            <h3><code>git log</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git config --global user.email blabal@bla</h3>
+            <h3><code>git checkout</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git init</h3>
+            <h3><code>git branch</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git status</h3>
+            <h3><code>git push</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git add</h3>
+            <h3><code>git pull</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git commit</h3>
+            <h3><code>git merge</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git log</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git checkout</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git branch</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git push</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git pull</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git merge</h3>
-            <p>Description</p>
-        </li>
-        <li>
-            <h3>git clone</h3>
+            <h3><code>git clone</code></h3>
             <p>Description</p>
         </li>
     </ul>
-    <h2>About .gitignore</h2>
+    <h2>About <code>.gitignore</code></h2>
     <p>
         Description
     </p>
@@ -71,23 +109,23 @@
     <h3>Записати такi команди:</h3>
     <ul>
         <li>
-            <h3>git revert</h3>
+            <h3><code>git revert</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git reset</h3>
+            <h3><code>git reset</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git rebase</h3>
+            <h3><code>git rebase</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git cherry-pick</h3>
+            <h3><code>git cherry-pick</code></h3>
             <p>Description</p>
         </li>
         <li>
-            <h3>git stash</h3>
+            <h3><code>git stash</code></h3>
             <p>Description</p>
         </li>
     </ul>

@@ -1,0 +1,7 @@
+.c-bash {
+  background-color: rgb(229,229,229);
+}
+.multiline {
+    display: block;
+    white-space: pre-line;
+}

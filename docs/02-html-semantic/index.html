@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/global.css" />
     <title>HTML Semantic</title>
     <style>
         p {
-            font-size: 11px;
+            font-size: 11px;    
         }
 
         h1 {
@@ -22,7 +23,9 @@
 </head>
 
 <body>
-    <h1>Human mission to Mars</h1>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <button class="back-link" data-backlink title="Back"> <= </button>
+    <h1 id="main">Human mission to Mars</h1>
     <hr />
 
     <p>A human mission to Mars has been the subject of science fiction since the 1880s, and of aerospace engineering and
@@ -79,6 +82,7 @@
             <p>Perseverance rover</p>
         </li>
     </ul>
+    <script src="/js/global.js"></script>
 </body>
 
 </html>

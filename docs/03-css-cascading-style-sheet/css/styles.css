@@ -1,0 +1,84 @@
+body {
+    height: 300vh;
+}
+.banner-init {
+    display: none !important;
+}
+
+.main-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    border: #0B2239 solid 1px;
+    padding-right: 1em;
+}
+
+/* Banner 1 */
+.b1-container {
+    color: #FFFFFF;
+    background-color: #0B2239;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 16px 0;
+    text-align: center;
+    font-family: Inter, serif;
+}
+
+
+.b1-inner {
+    display: inline-block;
+    max-width: 1200px;
+    text-align: left;
+}
+
+
+.b1-text {
+    vertical-align:middle;
+    height: auto;
+    display: inline-block;
+    max-width: 922px;
+    max-height: 2em;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.b1-buttons-wrapper {
+    vertical-align:middle;
+    display: inline-block;
+    margin-left: 8px;
+    height: 36px;
+}
+
+.b1-cookie-link-wrapper {
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 130px;
+}
+
+.b1-cookie-link {
+    vertical-align:middle;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4AD295;
+}
+
+.b1-accept-wrapper {
+    vertical-align:middle;
+    display: inline-block;
+    max-width: 130px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-color: #4AD295;
+    padding: 10px 8px;
+    border-radius: 2px;
+}
+
+.b1-accept {
+    vertical-align:middle;
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+}

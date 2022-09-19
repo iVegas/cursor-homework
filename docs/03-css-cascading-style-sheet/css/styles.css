@@ -1,6 +1,7 @@
 /* #region Global styling */
 body {
     height: 300vh;
+    background-color: gainsboro;
 }
 
 .banner-init {
@@ -126,4 +127,81 @@ body {
     background-image: url(../images/close.png);
 }
 
+/* #endregion*/
+
+/* #region Banner 3 */
+.b3-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    width: 560px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
+    border-radius: 16px;
+    padding: 18px 16px;
+    color: #0D0C22;
+    text-align: center;
+}
+
+.b3-container > *:not(:last-child) {
+    margin-right: 10px;
+}
+.b3-icon {
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    padding: 8px;
+    background: rgba(234, 76, 137, 0.1);
+    border-radius: 10px;
+}
+.b3-icon::before {
+    vertical-align: middle;
+    content: '';
+    background-image: url(../images/p-cookie.png);
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.b3-text {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Inter', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 347px;
+}
+.b3-text a {
+  color: #EA4C89;
+  text-decoration-line: none;
+}
+.b3-button {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Inter, serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 8px;
+    border-width: 0;
+    padding: 4px 10px 4px 10px;
+}
+
+.b3-button-accept {
+    color:#FFFFFF;
+    background-color: #EA4C89;
+    text-decoration-line: none;
+}
+
+.b3-button-decline {
+    color:#0D0C22;
+    background-color: #0D0C220D;
+    text-decoration-line: none;
+}
 /* #endregion*/

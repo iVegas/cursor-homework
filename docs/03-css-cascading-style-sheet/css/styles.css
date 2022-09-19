@@ -205,3 +205,43 @@ body {
     text-decoration-line: none;
 }
 /* #endregion*/
+
+/* #region Banner 4 */
+.b4-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #26262B;
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    box-shadow: 0px 0px 1px 0px #6060601A;
+    box-shadow: 0px 12px 24px -6px #60606026;
+    font-family: Avenir LT Std, Lato, Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.b4-text {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 469px;
+    margin-left: 10px;
+}
+.b4-text a {
+    color: #E6842E;
+}
+.b4-button {
+    display: inline-block;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 4px 10px;
+    color: #26262B;
+    vertical-align: middle;
+    text-decoration-line: none;
+}
+/* #endregion */

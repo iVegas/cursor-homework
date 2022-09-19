@@ -1,6 +1,8 @@
+/* #region Global styling */
 body {
     height: 300vh;
 }
+
 .banner-init {
     display: none !important;
 }
@@ -15,7 +17,10 @@ body {
     padding-right: 1em;
 }
 
-/* Banner 1 */
+/* #endregion */
+
+
+/* #region Banner 1 */
 .b1-container {
     color: #FFFFFF;
     background-color: #0B2239;
@@ -36,7 +41,7 @@ body {
 
 
 .b1-text {
-    vertical-align:middle;
+    vertical-align: middle;
     height: auto;
     display: inline-block;
     max-width: 922px;
@@ -46,27 +51,27 @@ body {
 }
 
 .b1-buttons-wrapper {
-    vertical-align:middle;
+    vertical-align: middle;
     display: inline-block;
     margin-left: 8px;
     height: 36px;
 }
 
 .b1-cookie-link-wrapper {
-    vertical-align:middle;
+    vertical-align: middle;
     display: inline-block;
     max-width: 130px;
 }
 
 .b1-cookie-link {
-    vertical-align:middle;
+    vertical-align: middle;
     font-size: 12px;
     font-weight: 600;
     color: #4AD295;
 }
 
 .b1-accept-wrapper {
-    vertical-align:middle;
+    vertical-align: middle;
     display: inline-block;
     max-width: 130px;
     margin-left: 10px;
@@ -77,8 +82,48 @@ body {
 }
 
 .b1-accept {
-    vertical-align:middle;
+    vertical-align: middle;
     font-size: 12px;
     font-weight: 600;
     color: #FFFFFF;
+    text-decoration-line: none;
 }
+
+/* #endregion */
+
+/* #region Banner 2 */
+.b2-container {
+    width: 100%;
+    background-color: #2B2627;
+    position: fixed;
+    top: 0;
+    padding: 16px 0;
+    color: #FFFFFF;
+    text-align: center;
+
+    font-family: 'Inter', serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.b2-container a {color: inherit;}
+
+.b2-button {
+    background-size: cover;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.b2-button-info {
+    background-image: url(../images/info.png);
+    margin-right: 8px;
+}
+
+.b2-button-close {
+    display: inline-block;
+    margin-left: 20px;
+    background-image: url(../images/close.png);
+}
+
+/* #endregion*/

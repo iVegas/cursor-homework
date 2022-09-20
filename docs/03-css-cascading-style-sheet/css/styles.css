@@ -8,6 +8,18 @@ body {
     display: none !important;
 }
 
+.banner-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.banner-bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
 .main-panel {
     position: fixed;
     top: 50%;
@@ -20,14 +32,10 @@ body {
 
 /* #endregion */
 
-
 /* #region Banner 1 */
 .b1-container {
     color: #FFFFFF;
     background-color: #0B2239;
-    position: fixed;
-    top: 0;
-    width: 100%;
     padding: 16px 0;
     text-align: center;
     font-family: Inter, serif;
@@ -94,10 +102,7 @@ body {
 
 /* #region Banner 2 */
 .b2-container {
-    width: 100%;
     background-color: #2B2627;
-    position: fixed;
-    top: 0;
     padding: 16px 0;
     color: #FFFFFF;
     text-align: center;
@@ -131,9 +136,6 @@ body {
 
 /* #region Banner 3 */
 .b3-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
     display: block;
     width: 560px;
     background: #FFFFFF;
@@ -208,9 +210,6 @@ body {
 
 /* #region Banner 4 */
 .b4-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
     background-color: #26262B;
     padding: 12px 16px;
     border-radius: 8px;
@@ -244,4 +243,64 @@ body {
     vertical-align: middle;
     text-decoration-line: none;
 }
+/* #endregion */
+
+/* #region Banner 5 */
+.b5-container {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #1C2540F2;
+    box-shadow: 0px 0px 1px 0px #6060601A;
+    box-shadow: 0px 12px 24px -6px #60606026;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.b5-container a {
+    color: inherit;
+ }
+
+.b5-text {
+    max-width: 312px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px 0 16px;
+}
+
+.b5-footer > a {
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    padding: 8px 0;
+    text-decoration-line: none;    
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.b5-footer .accept {
+    float: right;
+    padding: 8px 20px;
+    background-color: #09B3AF;
+    border-radius: 6px;
+}
+
+/* #endregion */
+
+/* #region Banner 6 */
+/* #endregion */
+
+/* #region Banner 7 */
+/* #endregion */
+
+/* #region Banner 8 */
 /* #endregion */

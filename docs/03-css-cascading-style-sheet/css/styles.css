@@ -297,6 +297,54 @@ body {
 /* #endregion */
 
 /* #region Banner 6 */
+
+.b6-container {
+    max-width: 360px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0F181D;    
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 16px;
+
+    box-shadow: 0px 0px 1px 0px #6060601A;
+    box-shadow: 0px 12px 24px -6px #60606026;
+
+}
+.b6-header {
+    margin-bottom: 10px;
+}
+.b6-text {
+    color: #687F8C;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    padding-right: 32px;
+}
+
+.b6-footer > a {
+    background-color: #EAF0F4;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 6px;
+    width: 49%;
+    text-decoration-line: none;
+
+    display:inline-block;
+    box-sizing: border-box;
+    color: #687F8C;
+}
+.b6-footer > .accept {
+    background-color: #40C1A7;
+    color: #FFFFFF;
+    float: right;
+}
 /* #endregion */
 
 /* #region Banner 7 */

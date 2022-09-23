@@ -348,6 +348,42 @@ body {
 /* #endregion */
 
 /* #region Banner 7 */
+.b7-container {
+    max-width: 320px;
+    padding: 32px;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(186, 226, 255, 0.15) 23.96%, rgba(229, 217, 255, 0.15) 71.87%, rgba(255, 255, 255, 0.15) 100%), #FFFFFF;
+    box-shadow: 0px 8px 32px rgba(10, 3, 89, 0.1);
+    border-radius: 20px;
+}
+
+.b7-header {
+    font-family: Gilroy;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 48px;
+}
+.b7-text {
+    margin-bottom: 32px;
+    max-width: 256px;
+}
+.b7-accept {
+    font-weight: 700;
+    text-decoration-line: none;
+    color: #FFFFFF;
+    background: #4A7EFF;
+    border-radius: 43px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 32px;
+}
 /* #endregion */
 
 /* #region Banner 8 */

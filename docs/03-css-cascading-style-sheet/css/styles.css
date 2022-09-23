@@ -387,4 +387,39 @@ body {
 /* #endregion */
 
 /* #region Banner 8 */
+.b8-container {
+    padding: 16px;
+    border-radius: 4px;
+    max-width: 320px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 8px 32px 0px #0A03591A;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.b8-text {
+    max-width: 288px;
+    margin-bottom: 12px;
+}
+.b8-footer {
+}
+.b8-footer > a {
+    display: inline-block;
+    color: #6666FF;
+    vertical-align: middle;
+    padding-top: 8px;
+    text-decoration-line: none;
+    font-weight: 500;
+    line-height: 17px;
+}
+.b8-footer .accept {
+    float: right;
+    background-color: #6666FF;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+}
 /* #endregion */

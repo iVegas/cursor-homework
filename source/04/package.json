@@ -1,0 +1,18 @@
+{
+  "name": "csr4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./public/index.html",
+  "scripts": {
+    "tasks": "gulp --tasks",
+    "start": "gulp watch"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

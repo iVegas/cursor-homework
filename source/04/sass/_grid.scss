@@ -1,0 +1,9 @@
+.row {
+    display: inline-block;
+    max-width: $containerWidth;
+}
+
+.half {
+    display: inline-block;
+    max-width: calc(($containerWidth / 2) - 20px);
+}

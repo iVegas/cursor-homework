@@ -23,3 +23,17 @@ a.skip-main:focus, a.skip-main:active {
     font-size:1.2em;
     z-index:999;
 }
+body > .back-link {
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    left: 1px;
+    top: 1px;
+    opacity: 0;
+    transition: all 1s ease-out;
+    z-index: 1;
+}
+body > .back-link:hover {
+    opacity: 1;
+    transition: all 1s ease-in;
+}

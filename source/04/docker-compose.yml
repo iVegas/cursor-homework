@@ -2,6 +2,7 @@ services:
 
   node:
     image: wodby/node:18-dev-1.9.0
+    restart: unless-stopped
     container_name: "crs4_node"
     working_dir: /var/www/html
     volumes:

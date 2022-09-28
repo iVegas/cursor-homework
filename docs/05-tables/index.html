@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Tables</title>
+</head>
+<body>
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <button class="back-link" data-backlink title="Back"> &lt;= </button>
+    <main id="main">
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>File.pdf</td>
+                        <td>3 min ago</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td>File.pdf</td>
+                        <td>Yesterday</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td>File.pdf</td>
+                        <td>June 1st, 2019</td>
+                        <td>···</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="file" id="all" onChange="toggle(this)"/> <label for="all">Name</label>
+                            <script language="JavaScript">
+                                function toggle(source) {
+                                    Array.from(document.getElementsByName(source.name))
+                                    .filter(checkbox => checkbox !== source)
+                                    .forEach(checkbox => checkbox.checked = source.checked);
+                                }
+                                </script>
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="file" id="file1"> <label for="file1">File.pdf</label></td>
+                        <td>3 min ago</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="file" id="file2"> <label for="file2">File.pdf</label></td>
+                        <td>Yesterday</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="file" id="file3"> <label for="file3">File.pdf</label></td>
+                        <td>June 1st, 2019</td>
+                        <td>···</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th><input type="search" name="search" id="search" placeholder="Search"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="i drawer"></i>File.pdf</td>
+                        <td>3 min ago</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td><i class="i drawer"></i>File.pdf</td>
+                        <td>Yesterday</td>
+                        <td>···</td>
+                    </tr>
+                    <tr>
+                        <td><i class="i drawer"></i>File.pdf</td>
+                        <td>June 1st, 2019</td>
+                        <td>···</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/global.js"></script>
+</body>
+</html>

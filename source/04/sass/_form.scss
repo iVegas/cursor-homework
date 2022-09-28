@@ -1,0 +1,67 @@
+h2 {
+    font-size: 2.57rem;
+    font-weight: 600;
+    line-height: 43px;
+    text-align: left;
+}
+
+input, select {
+    box-sizing: border-box;
+    background-color: transparent;
+    height: 4.29rem;
+    width: 100%;
+    margin-bottom: 24px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    text-indent: 31px;
+
+    &.half {
+        max-width: 47.23%;
+        width: 100%;
+        &:not(:nth-child(2n-1)) {
+           float: right;
+        }
+    }
+    &::placeholder {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: rgba(19, 39, 67, 0.5);
+    }
+}
+select {
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+    &::-ms-expand {
+        display: none;
+    }
+    option {
+        width: inherit;
+    }
+}
+
+input[type="submit"] {
+    box-sizing: border-box;
+    width: auto;
+    background-color: $orange;
+    display: inline-block;
+    color: white;
+    padding: 17px 34px;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    text-indent: 0;
+}

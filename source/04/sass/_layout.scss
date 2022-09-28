@@ -1,0 +1,60 @@
+
+body {
+    font-family: Lato, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: justified;
+}
+
+header, main, footer {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    p {
+        margin-right: 20%;
+        text-align: justify;
+    }
+}
+header {
+    color: $white;
+    background-color: $red;
+    padding-top: 6.53%;
+    padding-bottom: 6.6%;
+    img {
+        max-width: 100%;
+    }
+    
+}
+main {
+    padding-top: 8.125%;
+    padding-bottom: 8.54%;
+    h2 {
+        margin-top: 0;
+    }
+}
+
+footer {
+    p {
+        text-align: left;
+    }
+    padding-top: 5.9%;
+    padding-bottom: 5.97%;
+    background-color: #FAFAFA;
+    a {
+        color: #121212;
+        text-decoration-line: none;
+        &[href*="facebook.com"] {
+            background-image: url(../img/play.png);
+        }
+        
+        &[href*="apps.apple.com"] {
+            background-image: url(../img/astore.png);
+        }
+
+        &[href*="apps.microsoft.com"] {
+            background-image: url(../img/wstore.png);
+        }
+    }
+}

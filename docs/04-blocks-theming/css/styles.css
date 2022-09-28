@@ -1,11 +1,21 @@
 .row {
   display: inline-block;
-  max-width: 1100px;
+  width: auto;
+  max-width: 76.39%;
 }
 
 .half {
+  vertical-align: top;
   display: inline-block;
-  max-width: 530px;
+  width: auto;
+  max-width: 49%;
+}
+
+.forth {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  max-width: 24%;
 }
 
 body {
@@ -17,33 +27,139 @@ body {
   text-align: justified;
 }
 
-h2 {
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 43px;
-  text-align: left;
-}
-
 header, main, footer {
   justify-content: center;
   display: flex;
   align-items: center;
 }
+header p, main p, footer p {
+  margin-right: 20%;
+  text-align: justify;
+}
 
 header {
   color: #ffffff;
   background-color: #ED4C5C;
-  padding-top: 94px;
-  padding-bottom: 95px;
+  padding-top: 6.53%;
+  padding-bottom: 6.6%;
 }
 header img {
   max-width: 100%;
 }
 
+main {
+  padding-top: 8.125%;
+  padding-bottom: 8.54%;
+}
+main h2 {
+  margin-top: 0;
+}
+
+footer {
+  padding-top: 5.9%;
+  padding-bottom: 5.97%;
+  background-color: #FAFAFA;
+}
+footer p {
+  text-align: left;
+}
+footer a {
+  color: #121212;
+  text-decoration-line: none;
+}
+footer a[href*="facebook.com"] {
+  background-image: url(../img/play.png);
+}
+footer a[href*="apps.apple.com"] {
+  background-image: url(../img/astore.png);
+}
+footer a[href*="apps.microsoft.com"] {
+  background-image: url(../img/wstore.png);
+}
+
+h2 {
+  font-size: 2.57rem;
+  font-weight: 600;
+  line-height: 43px;
+  text-align: left;
+}
+
+input, select {
+  box-sizing: border-box;
+  background-color: transparent;
+  height: 4.29rem;
+  width: 100%;
+  margin-bottom: 24px;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  text-indent: 31px;
+}
+input.half, select.half {
+  max-width: 47.23%;
+  width: 100%;
+}
+input.half:not(:nth-child(2n-1)), select.half:not(:nth-child(2n-1)) {
+  float: right;
+}
+input::placeholder, select::placeholder {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+
+select {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(19, 39, 67, 0.5);
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  width: inherit;
+}
+
+input[type=submit] {
+  box-sizing: border-box;
+  width: auto;
+  background-color: #ee3d1b;
+  display: inline-block;
+  color: white;
+  padding: 17px 34px;
+  border: 1.5px solid #ED4C5C;
+  border-radius: 6px;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  text-indent: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul ul li {
+  display: inline-block;
+}
+
+.services-menu a {
+  text-transform: capitalize;
+}
+
 .platform-menu {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 40px 0 0;
 }
 .platform-menu li {
   display: inline-block;
@@ -68,4 +184,40 @@ header img {
 }
 .platform-menu a[href*="apps.microsoft.com"] {
   background-image: url(../img/wstore.png);
+}
+
+.contact-menu ul li:not(:first-child) {
+  margin-left: 12.5px;
+}
+.contact-menu ul li a {
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  background-image: url(../img/social.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.contact-menu ul li a[href*="facebook.com"] {
+  background-position: -2px 0px;
+}
+.contact-menu ul li a[href*="linkedin.com"] {
+  background-position: -26px 0px;
+}
+.contact-menu ul li a[href*="twitter.com"] {
+  background-position: -52px 0px;
+}
+
+.payment-system-support {
+  width: 216px;
+  height: 31px;
+  background-image: url(../img/payment.png);
+  background-size: cover;
+}
+
+.copyright {
+  margin-top: 86px;
+  white-space: nowrap;
 }

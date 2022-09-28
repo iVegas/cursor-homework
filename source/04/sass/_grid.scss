@@ -1,9 +1,19 @@
 .row {
     display: inline-block;
+    width: auto;
     max-width: $containerWidth;
 }
 
 .half {
+    vertical-align: top;
     display: inline-block;
-    max-width: calc(($containerWidth / 2) - 20px);
+    width: auto;
+    max-width: 49%;
+}
+
+.forth {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    max-width: 24%;
 }

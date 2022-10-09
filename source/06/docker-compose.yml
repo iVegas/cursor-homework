@@ -1,0 +1,11 @@
+services:
+
+  node:
+    image: wodby/node:18-dev-1.9.0
+    restart: unless-stopped
+    container_name: "crs6_node"
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - ../../docs/06-flexbox:/var/www/public
+    command: sh -c 'npm install && npm run start'

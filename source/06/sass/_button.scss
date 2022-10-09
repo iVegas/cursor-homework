@@ -1,0 +1,34 @@
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 50px;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    padding: 17px 29px;
+    color: var(--color-text1);
+    text-decoration: none;
+}
+
+.siren {
+    background: var(--primary-color1);
+    color: #FFFFFF
+}
+
+.request {
+    box-shadow: 0px 5px 5px 0px #4B5D681A;
+}
+
+.r-arrow::after {
+    content: '';
+    background-image: url(../img/r-arrow.png);
+    background-size: cover;
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    margin-left: 20px;
+    vertical-align:text-bottom;
+}

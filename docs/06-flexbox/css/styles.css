@@ -6,7 +6,13 @@
   --color-text1: #212353;
 }
 
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: Avenir;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   background-color: var(--main-background);
@@ -25,6 +31,11 @@ main {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .button {
@@ -73,9 +84,8 @@ ul {
 .header ul {
   display: flex;
   justify-content: flex-start;
+  align-content: center;
   gap: 40px;
-  font-family: Avenir;
-  font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0em;
@@ -155,31 +165,41 @@ ul {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 .hero2 p {
-  font-family: Avenir;
   font-size: 18px;
   font-weight: 500;
   line-height: 29px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
 .features {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.features > p {
+  max-width: 47%;
+  text-align: center;
 }
 .features ul {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 50px;
 }
 .features li {
   display: flex;
-  flex-direction: row;
-  max-width: 50%;
+  column-gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 45%;
+}
+.features li img {
+  max-width: 230px;
 }
 .features li h3 {
   font-family: Helvetica;
@@ -191,11 +211,30 @@ ul {
   color: #212353;
 }
 .features li p {
-  font-family: Avenir;
-  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
   text-align: left;
   color: #4B5D68;
+  flex-grow: 1;
+}
+.features li div:last-child {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.slider {
+  background-color: var(--primary-color1);
+  border-radius: 50px;
+}
+.slider > * {
+  margin-left: 93px;
+  margin-right: 76px;
+}
+.slider > *:first-child {
+  margin-top: 109px;
+}
+.slider > *:last-child {
+  margin-bottom: 58px;
 }

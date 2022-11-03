@@ -31,6 +31,8 @@ main {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -42,7 +44,8 @@ a {
   box-sizing: border-box;
   display: inline-block;
   border-radius: 50px;
-  font-family: Avenir;
+  border: none;
+  font-family: sans-serif, Avenir;
   font-size: 16px;
   font-weight: 800;
   line-height: 26px;
@@ -51,6 +54,7 @@ a {
   padding: 17px 29px;
   color: var(--color-text1);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .siren {
@@ -62,7 +66,7 @@ a {
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1019607843);
 }
 
-.r-arrow::after {
+.arrow::after {
   content: "";
   background-image: url(../img/r-arrow.png);
   background-size: cover;
@@ -71,6 +75,9 @@ a {
   height: 14px;
   margin-left: 20px;
   vertical-align: text-bottom;
+}
+.arrow__reverse::after {
+  transform: rotate(180deg);
 }
 
 .header {
@@ -225,16 +232,106 @@ a {
 }
 
 .slider {
-  background-color: var(--primary-color1);
   border-radius: 50px;
+  padding: 109px 76px 58px 93px;
 }
-.slider > * {
-  margin-left: 93px;
-  margin-right: 76px;
+.slider li {
+  display: flex;
+  flex-direction: row;
 }
-.slider > *:first-child {
-  margin-top: 109px;
+.slider .dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
 }
-.slider > *:last-child {
-  margin-bottom: 58px;
+.slider .dot.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.middle {
+  display: flex;
+  justify-content: space-between;
+  flex: 200px;
+}
+.middle > *:first-child {
+  flex-grow: 2;
+}
+.middle > *:last-child {
+  flex-grow: 2;
+}
+
+.footer-col .title {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  font-family: sans-serif, Avenir;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.social {
+  width: 100%;
+}
+.social ul {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.social li a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: rgba(33, 35, 83, 0.1);
+}
+.social li a::after {
+  content: "";
+  position: absolute;
+}
+.social li a[href*="twitter.com"]::after {
+  background-image: url("./img/tw.png");
+}
+
+.bottom {
+  width: 100%;
+  margin: 91px auto;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom p {
+  max-width: 300px;
+  font-family: sans-serif, Avenir;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+.bottom button {
+  position: fixed;
+  bottom: 91px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(156, 105, 226, 0.2);
+  transform: translateX(-100%);
+  cursor: pointer;
 }

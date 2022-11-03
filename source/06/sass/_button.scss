@@ -2,7 +2,8 @@
     box-sizing: border-box;
     display: inline-block;
     border-radius: 50px;
-    font-family: Avenir;
+    border: none;
+    font-family: sans-serif, Avenir;
     font-size: 16px;
     font-weight: 800;
     line-height: 26px;
@@ -11,6 +12,7 @@
     padding: 17px 29px;
     color: var(--color-text1);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .siren {
@@ -22,13 +24,20 @@
     box-shadow: 0px 5px 5px 0px #4B5D681A;
 }
 
-.r-arrow::after {
-    content: '';
-    background-image: url(../img/r-arrow.png);
-    background-size: cover;
-    display: inline-block;
-    width: 20px;
-    height: 14px;
-    margin-left: 20px;
-    vertical-align:text-bottom;
+.arrow {
+    &::after {
+        content: '';
+        background-image: url(../img/r-arrow.png);
+        background-size: cover;
+        display: inline-block;
+        width: 20px;
+        height: 14px;
+        margin-left: 20px;
+        vertical-align:text-bottom;
+    }
+    &__reverse {
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
 }

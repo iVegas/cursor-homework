@@ -156,16 +156,113 @@
 }
 
 .slider {
-    background-color: var(--primary-color1);
     border-radius: 50px;
+    padding: 109px 76px 58px 93px;
     > * {
         &:first-child {
-            margin-top: 109px;
         }
         &:last-child {
-            margin-bottom: 58px;
         }
-        margin-left: 93px;
-        margin-right: 76px;
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+    .dot {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        &.active {
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.middle {
+    display: flex;
+    justify-content: space-between;
+    flex: 200px;
+
+    > *:first-child {
+        flex-grow: 2;
+    }
+
+    > *:last-child {
+        flex-grow: 2;
+    }
+}
+.footer-col {
+    .title{
+        display: flex;
+        justify-content: left;
+        gap: 20px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+        font-family: sans-serif, Avenir;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+
+    }
+}
+.social {
+    width: 100%;
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    li a{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: rgba(33, 35, 83, 0.1);
+        &::after {
+            content: '';
+            position: absolute;
+        }
+        &[href*="twitter.com"]::after {
+            background-image: url("./img/tw.png");
+        }
+    }
+}
+.bottom {
+    width: 100%;
+    margin: 91px auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    p {
+        max-width: 300px;
+        font-family: sans-serif, Avenir;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+    button {
+        position: fixed;
+        bottom: 91px;
+        width: 60px;
+        height: 60px;
+        border: none;
+        border-radius: 30px;
+        background: rgba(156, 105, 226, 0.2);
+        transform: translateX(-100%);
+        cursor: pointer;
     }
 }

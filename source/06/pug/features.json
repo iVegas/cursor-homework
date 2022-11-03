@@ -1,0 +1,28 @@
+{
+  "features": [
+    {
+      "img": "img/i1.png",
+      "title": "Search Data",
+      "content": "Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.",
+      "link_url": "#"
+    },
+    {
+      "img": "img/i2.png",
+      "title": "24 Hours Access",
+      "content": "Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.",
+      "link_url": "#"
+    },
+    {
+      "img": "img/i3.png",
+      "title": "Print Out",
+      "content": "Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.",
+      "link_url": "#"
+    },
+    {
+      "img": "img/i4.png",
+      "title": "Security Code",
+      "content": "Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.",
+      "link_url": "#"
+    }
+  ]
+}

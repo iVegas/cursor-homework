@@ -23,12 +23,14 @@ document.addEventListener("readystatechange", e => {
     window.player = new YT.Player('video', {
       autoplay: 1,
       enablejsapi: 1,
+      loading: 'lazy',
       height: '390',
       width: '640',
       videoId: 'M7lc1UVf-VE'
     });
     window.player.addEventListener('onReady', window.onPlayerReady);
     window.player.addEventListener('onStateChange', window.onPlayerStateChange);
+    window.player.getIframe().loading = 'lazy';
   }
 
 // 4. The API will call this function when the video player is ready.

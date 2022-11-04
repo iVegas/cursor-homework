@@ -9,7 +9,7 @@ document.addEventListener("readystatechange", e => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", e => {
+document.addEventListener("readystatechange", e => {
 
 // 2. This code loads the IFrame Player API code asynchronously.
   const tag = document.createElement('script');
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", e => {
 //    after the API code downloads.
   let player;
 
-  function onYouTubeIframeAPIReady() {
-    player = new YT.Player('video', {
+  window.onYouTubeIframeAPIReady = () => {
+    window.player = new YT.Player('video', {
       height: '390',
       width: '640',
       videoId: 'M7lc1UVf-VE',
@@ -53,6 +53,6 @@ document.addEventListener("DOMContentLoaded", e => {
   }
 
   function stopVideo() {
-    player.stopVideo();
+    window.player.stopVideo();
   }
 })

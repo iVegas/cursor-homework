@@ -1,0 +1,44 @@
+html, body {
+  width: 99%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw;
+}
+.grid {
+  border: 1px solid black;
+  height: 10vh;
+}
+.grid:nth-child(n+21) {
+  background-color: blue;
+}
+.grid:nth-child(4n-1) {
+  background-color: red;
+}
+
+button {
+  margin: 5% 25%;
+  padding: 10px 50px;
+  border-radius: 20px;
+  background-color: aquamarine;
+  position: relative;
+  border: none;
+}
+
+button:before, button:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: .2em;
+  width: 50%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+button:before {
+  transform: translate(-200%, 100%);
+}
+
+button:after {
+  transform: translate(220%, -220%);
+}

@@ -8,9 +8,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" as="style" href="css/screen.css">
     <link rel="preload" as="style" href="css/fonts.css">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="preload" as="style" href="css/main.css">
     <link rel="stylesheet" href="css/screen.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -177,8 +179,8 @@
 <section class="reviews">
     <div class="wrapper">
         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-        <img src="img/arrow-left.png" alt="" class="arrow-left" loading="lazy">
-        <div class="review-slider">
+        <img src="img/arrow-left.png" alt="" class="arrow-left" data-slick-slider-left loading="lazy">
+        <div class="review-slider" data-slick-slider>
             <div class="slide">
                 <img src="img/review1.jpg" alt="" class="main-review-img" loading="lazy">
                 <p class="review-text">
@@ -199,8 +201,28 @@
                 <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava" loading="lazy"><b>Константин</b><i>г.
                     Днепропетровск</i></div>
             </div>
+            <div class="slide">
+                <img src="img/review1.jpg" alt="" class="main-review-img" loading="lazy">
+                <p class="review-text">
+                    2 Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                    дизайн
+                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                    года
+                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                    данные
+                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                    наткнулся на
+                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                    восторге от
+                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                    зеркало
+                    любой машины, вообщем то что доктор прописал!
+                </p>
+                <div class="review-author"><img src="img/review1-ava.jpg" alt="" class="ava" loading="lazy"><b>Константин</b><i>г.
+                    Днепропетровск</i></div>
+            </div>
         </div>
-        <img src="img/arrow-right.png" alt="" class="arrow-right" loading="lazy">
+        <img src="img/arrow-right.png" alt="" class="arrow-right" data-slick-slider-right loading="lazy">
     </div>
 </section>
 <section class="delivery">
@@ -214,13 +236,16 @@
         </ul>
         <p>Мы заботимся о своей репутации, клиенты для нас на первом месте!</p>
         <div class="advantages">
-            <div class="adv"><img src="img/adv1.png" alt="" loading="lazy">
+            <div class="adv">
+                <div class="bg-adv bg-adv1"></div>
                 <div class="adv-title yellow">Оплата при получении</div>
             </div>
-            <div class="adv"><img src="img/adv2.png" alt="" loading="lazy">
+            <div class="adv">
+                <div class="bg-adv bg-adv2"></div>
                 <div class="adv-title yellow">365 дней гарантии</div>
             </div>
-            <div class="adv"><img src="img/adv3.png" alt="" loading="lazy">
+            <div class="adv">
+                <div class="bg-adv bg-adv3"></div>
                 <div class="adv-title yellow">Возврат денег в течение 14 дней</div>
             </div>
         </div>
@@ -279,6 +304,7 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" defer integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script type="text/javascript" defer src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

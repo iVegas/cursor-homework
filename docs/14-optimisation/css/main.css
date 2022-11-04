@@ -525,6 +525,7 @@ button {
 }
 
 .reviews .review-author .ava {
+    display: inline;
     position: relative;
     top: -15px;
     margin-right: 10px;
@@ -584,6 +585,23 @@ button {
     margin-top: 15px;
     font-family: "HelveticaNeueBold";
     font-size: 18px;
+}
+
+.bg-adv {
+    display: inline-block;
+}
+
+.bg-adv1 {
+    width: 55px; height: 60px;
+    background: url('../img/adv.png') -10px -10px;
+}
+.bg-adv2 {
+    width: 55px; height: 60px;
+    background: url('../img/adv.png') -85px -10px;
+}
+.bg-adv3 {
+    width: 60px; height: 54px;
+    background: url('../img/adv.png') -160px -10px;
 }
 
 .last-screen {

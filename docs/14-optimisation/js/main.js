@@ -2,7 +2,13 @@
 
 document.addEventListener("readystatechange", e => {
   document.querySelector('body > .spinner').classList.remove('spinner');
+  $('[data-slick-slider]').slick({
+    "swipeToSlide": true,
+    "prevArrow": "[data-slick-slider-left]",
+    "nextArrow": "[data-slick-slider-right]"
+  });
 });
+
 document.addEventListener("DOMContentLoaded", e => {
 
 // 2. This code loads the IFrame Player API code asynchronously.

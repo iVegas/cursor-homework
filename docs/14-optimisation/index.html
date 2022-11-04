@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Page description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" as="style" href="css/screen.css">
     <link rel="preload" as="style" href="css/fonts.css">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="spinner"></div>
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -34,7 +36,10 @@
             <button class="btn-order">Заказать</button>
         </div>
         <div class="right-block">
-            <img src="img/product.png" alt="" class="main-image">
+            <picture>
+                <source srcset="img/product.webp">
+                <img src="img/product.png" alt="" class="main-image">
+            </picture>
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -273,7 +278,7 @@
 
     </div>
 </footer>
-<script src="lib/plugins.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" defer integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

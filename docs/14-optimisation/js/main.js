@@ -1,5 +1,8 @@
 'use strict';
 
+document.addEventListener("readystatechange", e => {
+  document.querySelector('body > .spinner').classList.remove('spinner');
+});
 document.addEventListener("DOMContentLoaded", e => {
 
 // 2. This code loads the IFrame Player API code asynchronously.

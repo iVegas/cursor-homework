@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "./public/index.html",
+  "type": "module",
   "scripts": {
     "tasks": "gulp --tasks",
     "start": "gulp watch"
   },
   "dependencies": {
-    "esm": "^3.2.25",
     "gulp-sass": "^5.1.0",
     "sass": "^1.55.0"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.1.0"
   },
   "overrides": {
     "chokidar": "^3.0.0",

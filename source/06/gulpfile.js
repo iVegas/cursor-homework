@@ -1,5 +1,7 @@
 import gulp from "gulp";
-const sass = require('gulp-sass')(require('sass'));
+import * as dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 import pug from "gulp-pug";
 
 
